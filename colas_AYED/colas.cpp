@@ -27,13 +27,13 @@ int main() {
 		test.otro_algo = 2 * i;
 		queue(fte, fin, test);
 	}
-	MostrarElementos(fte);
-	if (isDel(fte, fin))
+	 // MostrarElementos(fte);    //agregue esto para saber lo que tengo en la cola por primera ves antes de eliminar los 2 nodos
+	if (isDel(fte, fin))  //aca compruebo si se pudo eliminar
 		cout << "se pudo eliminar" << endl;
 	else
 		cout << "no es posible eliminar" << endl;
 
-	MostrarElementos(fte);
+	MostrarElementos(fte); //muestro los valores de la cola modificada
 	return 0;
 }
 
